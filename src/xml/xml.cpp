@@ -888,7 +888,7 @@ bool wxXmlDocument::Load(wxInputStream& stream, const wxString& encoding, int fl
     m_encoding = encoding;
 #endif
 
-    const size_t BUFSIZE = 1024;
+    const size_t BUFSIZE = 131072;
     char buf[BUFSIZE];
     wxXmlParsingContext ctx;
     bool done;

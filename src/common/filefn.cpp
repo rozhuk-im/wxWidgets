@@ -933,7 +933,7 @@ wxConcatFiles (const wxString& file1, const wxString& file2, const wxString& fil
         return false;
 
     ssize_t ofs;
-    unsigned char buf[1024];
+    unsigned char buf[131072];
 
     for( int i=0; i<2; i++)
     {
@@ -979,7 +979,7 @@ wxDoCopyFile(wxFile& fileIn,
         return false;
 
     // copy contents of file1 to file2
-    char buf[4096];
+    char buf[131072];
     for ( ;; )
     {
         ssize_t count = fileIn.Read(buf, WXSIZEOF(buf));

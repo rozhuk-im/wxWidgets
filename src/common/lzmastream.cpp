@@ -40,7 +40,7 @@ namespace wxPrivate
 // Constants
 // ----------------------------------------------------------------------------
 
-const size_t wxLZMA_BUF_SIZE = 4096;
+const size_t wxLZMA_BUF_SIZE = 131072;
 
 // ----------------------------------------------------------------------------
 // Private helpers

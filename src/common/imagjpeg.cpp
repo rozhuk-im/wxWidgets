@@ -359,7 +359,7 @@ typedef struct {
 
 typedef wx_destination_mgr * wx_dest_ptr;
 
-#define OUTPUT_BUF_SIZE  4096    /* choose an efficiently fwrite'able size */
+#define OUTPUT_BUF_SIZE 131072    /* choose an efficiently fwrite'able size */
 
 extern "C"
 {

@@ -69,7 +69,7 @@ public:
         //
         // NB: don't use "static int" in this inline function, some compilers
         //     (e.g. IBM xlC) don't like it
-        enum { incSize = 4096 };
+        enum { incSize = 131072 };
 
         void *buf = realloc(m_buffer, m_size + incSize);
         if ( !buf )
